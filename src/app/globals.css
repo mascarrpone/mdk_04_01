@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #2a80fd;        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: white;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: 2px solid black;  /* padding вокруг плашки */
+}
